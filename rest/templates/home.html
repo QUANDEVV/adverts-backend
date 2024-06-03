@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+</head>
+<body>
+
+  <h2>Testo</h2>
+
+  {% load socialaccount %}
+  <a href="{% provider_login_url 'google' %}?next=/">Login with google</a>
+
+  {% if user.is_authenticated %}
+  <a> Your are signed in as {{user.email}}</a>
+  {% endif %}
+  
+</body>
+</html>
