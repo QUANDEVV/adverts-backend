@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-67()*kg*%sn(s%rk!&=$pry4bixxjg1dm8r)rcj-ikp-h$3f@h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*' , 'localhost', 'localhost:3000' , 'http://localhost:3000' , '.vercel.app' , 'aifans-django.onrender.com']
 
@@ -131,10 +131,10 @@ else:
     # Use PostgreSQL for production
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'aifans',  # Database name
-        'USER': 'aifans_user',  # Database user
-        'PASSWORD': 'YBm8wQKH6BD2WDSy15cnRGc4M9C4bP4F',  # Database password
-        'HOST': 'dpg-cp2eo36n7f5s73fgh5p0-a.oregon-postgres.render.com',  # Database host
+        'NAME': 'adverts_o5xc',  # Database name
+        'USER': 'adverts_o5xc_user',  # Database user
+        'PASSWORD': 'tVS48gPrqbeGBmUdhkJEn64oi5tOSie9',  # Database password
+        'HOST': 'dpg-cpet7b7109ks73fkaqmg-a.oregon-postgres.render.com',  # Database host
         'PORT': '5432',  # Database port
     }
 
